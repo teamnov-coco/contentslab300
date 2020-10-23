@@ -1,0 +1,247 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*teamnov*/
+body {
+	width: 100%;
+	background-color: #efefef;
+}
+
+.header {
+	background-color: #fff;
+	text-align: center;
+	height: 120px;
+	line-height: 125px;
+}
+
+.logo {
+	vertical-align: middle;
+}
+
+.logo.mobile {
+	display: none;
+}
+
+.card-wrap {
+	background-color: #fff;
+	max-width: 700px;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.card-nav {
+	max-width: 700px;
+	display: flex;
+	overflow: hidden;
+	margin: auto;
+	align-items: center;
+}
+
+.card-nav img {
+	max-width: 20%;
+	height: auto;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.card-nav img.on {
+	opacity: 1;
+}
+
+.nav-wrap {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.card-nav2 {
+	max-width: 700px;
+	margin: auto;
+	font-size: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.card-nav2 img {
+	opacity: .4;
+	width: 140px;
+	height: auto;
+	cursor: pointer;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.card-nav2 img.on {
+	border-color: #ff3636;
+	border-radius: 2px;
+	border-width: 3px;
+	opacity: 1;
+}
+
+.card-nav2 img:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 699px) {
+	.header {
+		height: 70px;
+		line-height: 70px;
+		margin-bottom: calc(30% - 70px);
+	}
+
+	.logo.mobile {
+		display: inline;
+	}
+
+	.logo.desktop {
+		display: none;
+	}
+
+	.card-wrap {
+		max-width: none;
+		width: 100%;
+	}
+
+	.card-nav2 {
+		max-width: none;
+		width: 100%;
+	}
+
+	.card-nav2 img {
+		width: 20%;
+		height: auto;
+	}
+
+}
